@@ -1,0 +1,132 @@
+[gd_scene load_steps=12 format=3 uid="uid://cmx3d3go1ujgq"]
+
+[ext_resource type="Script" path="res://Scripts/CardManager.gd" id="1_hdhgw"]
+[ext_resource type="PackedScene" uid="uid://h27e3jm5o8vs" path="res://Scenes/CardSlot.tscn" id="2_yi8v5"]
+[ext_resource type="Script" path="res://Scripts/CardSlot.gd" id="3_mvfb4"]
+[ext_resource type="Script" path="res://Scripts/PlayerHand.gd" id="4_3sfv0"]
+[ext_resource type="Script" path="res://Scripts/Deck.gd" id="5_ui55o"]
+[ext_resource type="Texture2D" uid="uid://b842caehr0xd1" path="res://Assets/Deck.png" id="6_l8jn2"]
+[ext_resource type="Script" path="res://Scenes/Player.gd" id="6_xm6rj"]
+[ext_resource type="Script" path="res://Scenes/InputManger.gd" id="7_i0l5q"]
+[ext_resource type="Script" path="res://Scenes/PlayerBoard.gd" id="7_wsj6i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4ajj"]
+size = Vector2(1138, 254)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rwkqv"]
+size = Vector2(180, 264)
+
+[node name="Main" type="Node2D"]
+
+[node name="CardManager" type="Node2D" parent="."]
+script = ExtResource("1_hdhgw")
+
+[node name="EnemyBoard" type="Node2D" parent="."]
+
+[node name="CardSlot" parent="EnemyBoard" instance=ExtResource("2_yi8v5")]
+position = Vector2(960, 750)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("3_mvfb4")
+
+[node name="CardSlot2" parent="EnemyBoard" instance=ExtResource("2_yi8v5")]
+position = Vector2(820, 750)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("3_mvfb4")
+
+[node name="CardSlot3" parent="EnemyBoard" instance=ExtResource("2_yi8v5")]
+position = Vector2(680, 750)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("3_mvfb4")
+
+[node name="CardSlot4" parent="EnemyBoard" instance=ExtResource("2_yi8v5")]
+position = Vector2(1100, 750)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("3_mvfb4")
+
+[node name="CardSlot5" parent="EnemyBoard" instance=ExtResource("2_yi8v5")]
+position = Vector2(1240, 750)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("3_mvfb4")
+
+[node name="OpponentDeck" type="Node2D" parent="."]
+z_index = -2
+position = Vector2(1780, 125)
+scale = Vector2(0.8, 0.8)
+
+[node name="Sprite2D" type="Sprite2D" parent="OpponentDeck"]
+z_index = -2
+texture = ExtResource("6_l8jn2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="OpponentDeck"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -9.0
+offset_top = -28.0
+offset_right = 31.0
+offset_bottom = 12.0
+scale = Vector2(2, 2)
+text = "0"
+
+[node name="InputManger" type="Node2D" parent="."]
+script = ExtResource("7_i0l5q")
+
+[node name="EndTurnButton" type="Button" parent="."]
+offset_left = 300.0
+offset_top = 570.0
+offset_right = 378.0
+offset_bottom = 601.0
+text = "End turn
+"
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("6_xm6rj")
+
+[node name="PlayerBoard" type="Node2D" parent="Player"]
+script = ExtResource("7_wsj6i")
+
+[node name="Area2D" type="Area2D" parent="Player/PlayerBoard"]
+position = Vector2(960, 749)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/PlayerBoard/Area2D"]
+position = Vector2(1, -3)
+shape = SubResource("RectangleShape2D_l4ajj")
+
+[node name="PlayerHand" type="Node2D" parent="Player"]
+position = Vector2(549, 640)
+script = ExtResource("4_3sfv0")
+
+[node name="Deck" type="Node2D" parent="Player"]
+z_index = -2
+position = Vector2(140, 995)
+scale = Vector2(0.8, 0.8)
+script = ExtResource("5_ui55o")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/Deck"]
+z_index = -2
+texture = ExtResource("6_l8jn2")
+
+[node name="Area2D" type="Area2D" parent="Player/Deck"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Deck/Area2D"]
+shape = SubResource("RectangleShape2D_rwkqv")
+
+[node name="CardAmount" type="RichTextLabel" parent="Player/Deck"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -11.25
+offset_top = -108.75
+offset_right = 28.75
+offset_bottom = -68.75
+scale = Vector2(2, 2)
+text = "0"
+
+[node name="ManaAmount" type="RichTextLabel" parent="Player/Deck"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -10.0
+offset_top = 41.25
+offset_right = 30.0
+offset_bottom = 81.25
+scale = Vector2(2, 2)
+text = "0"

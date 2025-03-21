@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="card_resource" load_steps=3 format=3 uid="uid://chf3yx1qyket8"]
+
+[ext_resource type="Script" path="res://CardResource.gd" id="1_0llrp"]
+[ext_resource type="Script" path="res://CardFunctions.gd" id="2_5qdqg"]
+
+[resource]
+script = ExtResource("1_0llrp")
+script_source = ExtResource("2_5qdqg")
+CardEvent_count = 1
+CardEvent_0/trigger_method = ""
+CardEvent_0/trigger_event = ""

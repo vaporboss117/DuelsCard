@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://dyd671fyvenq3"]
 
-[ext_resource type="Script" path="res://addons/FancyControls/Example/testing.gd" id="1_4dv0c"]
-[ext_resource type="Script" path="res://addons/FancyControls/Controls/AnimatedBoxContainer/AnimatedBoxContainer.gd" id="1_hssgr"]
-[ext_resource type="Script" path="res://addons/FancyControls/Controls/AnimatedRoundContainer/AnimatedRoundContainer.gd" id="3_j83mo"]
-[ext_resource type="Script" path="res://addons/FancyControls/Controls/AnimatedFromCenterRoundContainer/AnimatedFromCenterRoundContainer.gd" id="5_4vyu1"]
-[ext_resource type="Script" path="res://addons/FancyControls/Controls/AnimatedGridSlideInContainer/AnimatedGridSlideInContainer.gd" id="5_lwohf"]
+[ext_resource type="Script" uid="uid://b8wwky84k071l" path="res://addons/FancyControls/Example/testing.gd" id="1_4dv0c"]
+[ext_resource type="Script" uid="uid://08wvgsthtpnb" path="res://addons/FancyControls/Controls/AnimatedBoxContainer/AnimatedBoxContainer.gd" id="1_hssgr"]
+[ext_resource type="Script" uid="uid://d32eov7k4tfhd" path="res://addons/FancyControls/Controls/AnimatedRoundContainer/AnimatedRoundContainer.gd" id="3_j83mo"]
+[ext_resource type="Script" uid="uid://baeg0332it4bl" path="res://addons/FancyControls/Controls/AnimatedFromCenterRoundContainer/AnimatedFromCenterRoundContainer.gd" id="5_4vyu1"]
+[ext_resource type="Script" uid="uid://s0lmu1eyr6n7" path="res://addons/FancyControls/Controls/AnimatedGridSlideInContainer/AnimatedGridSlideInContainer.gd" id="5_lwohf"]
 
 [sub_resource type="GDScript" id="GDScript_3xug0"]
 script/source = "extends Node

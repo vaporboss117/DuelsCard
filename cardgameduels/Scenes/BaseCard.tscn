@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://ssutym8niv48"]
 
-[ext_resource type="Script" path="res://Scripts/Card.gd" id="1_onukl"]
+[ext_resource type="Script" uid="uid://cercsa5krt6gs" path="res://Scripts/Card.gd" id="1_onukl"]
 [ext_resource type="Texture2D" uid="uid://b842caehr0xd1" path="res://Assets/Deck.png" id="2_y5iyf"]
 [ext_resource type="Texture2D" uid="uid://bh8v8b24c8rl1" path="res://Assets/KnightCard.jpg" id="3_8yat5"]
 
@@ -160,8 +160,8 @@ tracks/5/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r2aio"]
 _data = {
-"RESET": SubResource("Animation_m8om3"),
-"card_flip": SubResource("Animation_xigkg")
+&"RESET": SubResource("Animation_m8om3"),
+&"card_flip": SubResource("Animation_xigkg")
 }
 
 [node name="Card" type="Node2D"]

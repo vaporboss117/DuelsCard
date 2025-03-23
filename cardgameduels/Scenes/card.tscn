@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dsy1ne8w3dkh4"]
 
-[ext_resource type="Script" path="res://Scripts/Card.gd" id="1_30phw"]
+[ext_resource type="Script" uid="uid://cercsa5krt6gs" path="res://Scripts/Card.gd" id="1_30phw"]
 [ext_resource type="Texture2D" uid="uid://b842caehr0xd1" path="res://Assets/Deck.png" id="2_mu3fv"]
 [ext_resource type="Texture2D" uid="uid://en3qed8s8tee" path="res://Assets/BaseDraft.png" id="3_16l4m"]
 [ext_resource type="Texture2D" uid="uid://btot4uut74jiu" path="res://Assets/ArcherCard.png" id="4_6soko"]
@@ -233,8 +233,8 @@ tracks/8/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r2aio"]
 _data = {
-"RESET": SubResource("Animation_m8om3"),
-"card_flip": SubResource("Animation_xigkg")
+&"RESET": SubResource("Animation_m8om3"),
+&"card_flip": SubResource("Animation_xigkg")
 }
 
 [node name="Card" type="Node2D"]

@@ -1,14 +1,14 @@
 [gd_scene load_steps=12 format=3 uid="uid://cmx3d3go1ujgq"]
 
-[ext_resource type="Script" path="res://Scripts/CardManager.gd" id="1_hdhgw"]
+[ext_resource type="Script" uid="uid://b8j4hgrlufh5g" path="res://Scripts/CardManager.gd" id="1_hdhgw"]
 [ext_resource type="PackedScene" uid="uid://h27e3jm5o8vs" path="res://Scenes/CardSlot.tscn" id="2_yi8v5"]
-[ext_resource type="Script" path="res://Scripts/CardSlot.gd" id="3_mvfb4"]
-[ext_resource type="Script" path="res://Scripts/PlayerHand.gd" id="4_3sfv0"]
-[ext_resource type="Script" path="res://Scripts/Deck.gd" id="5_ui55o"]
+[ext_resource type="Script" uid="uid://c73k63q4j5d04" path="res://Scripts/CardSlot.gd" id="3_mvfb4"]
+[ext_resource type="Script" uid="uid://cjex7b2o6kx7t" path="res://Scripts/PlayerHand.gd" id="4_3sfv0"]
+[ext_resource type="Script" uid="uid://cl8feex51xeks" path="res://Scripts/Deck.gd" id="5_ui55o"]
 [ext_resource type="Texture2D" uid="uid://b842caehr0xd1" path="res://Assets/Deck.png" id="6_l8jn2"]
-[ext_resource type="Script" path="res://Scenes/Player.gd" id="6_xm6rj"]
-[ext_resource type="Script" path="res://Scenes/InputManger.gd" id="7_i0l5q"]
-[ext_resource type="Script" path="res://Scenes/PlayerBoard.gd" id="7_wsj6i"]
+[ext_resource type="Script" uid="uid://do2m2kmu87r5" path="res://Scenes/Player.gd" id="6_xm6rj"]
+[ext_resource type="Script" uid="uid://ckwdc7hfgra3t" path="res://Scenes/InputManger.gd" id="7_i0l5q"]
+[ext_resource type="Script" uid="uid://daxu172r4vavd" path="res://Scenes/PlayerBoard.gd" id="7_wsj6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l4ajj"]
 size = Vector2(1138, 254)

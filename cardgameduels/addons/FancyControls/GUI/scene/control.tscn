@@ -1,16 +1,16 @@
 [gd_scene load_steps=22 format=3 uid="uid://bd5e2fiftorgo"]
 
-[ext_resource type="Script" path="res://addons/FancyControls/GUI/scene/gui_root_script.gd" id="2_g6mr6"]
+[ext_resource type="Script" uid="uid://b7iiustsbv14l" path="res://addons/FancyControls/GUI/scene/gui_root_script.gd" id="2_g6mr6"]
 [ext_resource type="Texture2D" uid="uid://bhvhlwa1y2ec" path="res://addons/FancyControls/GUI/scene/2d.res" id="3_2xky7"]
 [ext_resource type="Texture2D" uid="uid://crddlvxtjq48j" path="res://addons/FancyControls/GUI/scene/ClassList.svg" id="4_cm06k"]
 [ext_resource type="Texture2D" uid="uid://b5vkq3256l43k" path="res://addons/FancyControls/GUI/scene/script.res" id="4_dh5u7"]
-[ext_resource type="Script" path="res://addons/FancyControls/GUI/block/BlockList.gd" id="5_n5rgj"]
-[ext_resource type="Script" path="res://addons/FancyControls/GUI/block/BlockUI.gd" id="6_bgwiu"]
-[ext_resource type="Script" path="res://addons/FancyControls/GUI/scene/CodeBox.gd" id="8_ii3ab"]
-[ext_resource type="Script" path="res://addons/FancyControls/Controls/AnimatedRoundContainer/AnimatedRoundContainer.gd" id="9_3hbk3"]
+[ext_resource type="Script" uid="uid://df8pgea4kw7kh" path="res://addons/FancyControls/GUI/block/BlockList.gd" id="5_n5rgj"]
+[ext_resource type="Script" uid="uid://bwftx0i4xm5f0" path="res://addons/FancyControls/GUI/block/BlockUI.gd" id="6_bgwiu"]
+[ext_resource type="Script" uid="uid://b8a3iikrsehrl" path="res://addons/FancyControls/GUI/scene/CodeBox.gd" id="8_ii3ab"]
+[ext_resource type="Script" uid="uid://d32eov7k4tfhd" path="res://addons/FancyControls/Controls/AnimatedRoundContainer/AnimatedRoundContainer.gd" id="9_3hbk3"]
 [ext_resource type="CodeHighlighter" uid="uid://g0qjjgb0nwf8" path="res://addons/FancyControls/GUI/codehighlight.tres" id="9_8spe6"]
-[ext_resource type="Script" path="res://addons/FancyControls/Controls/AnimatedItem/FancyAnimatedItem/FancyAnimatedItem.gd" id="10_e6eqe"]
-[ext_resource type="Script" path="res://addons/FancyControls/GUI/scene/GroupsBox.gd" id="10_p5gwx"]
+[ext_resource type="Script" uid="uid://dtl6x6vrjf5lq" path="res://addons/FancyControls/Controls/AnimatedItem/FancyAnimatedItem/FancyAnimatedItem.gd" id="10_e6eqe"]
+[ext_resource type="Script" uid="uid://ddlywmqex5bu8" path="res://addons/FancyControls/GUI/scene/GroupsBox.gd" id="10_p5gwx"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fbxee"]
 content_margin_left = 12.0
